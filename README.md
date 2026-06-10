@@ -12,9 +12,22 @@ Our agentic AI work: an enterprise agent desktop platform, in production on Wind
 
 ## 🎥 Demo: a real autonomous agent
 
-*(demo video — being added)*
+These are unedited screen recordings of RDCLAW given a goal in plain English. What makes it an agent rather than a chatbot: it **plans, calls tools (web search, shell, files), observes the results, and self-corrects until the task is done** — including diagnosing and fixing its own failures mid-task without human help.
 
-The demo shows what makes this an agent rather than a chatbot: given a goal, it **plans, calls tools (web search, shell, files), observes the results, and self-corrects until the task is done** — including diagnosing and fixing its own failures mid-task without human help.
+<div align="center">
+<img src="media/demo-preview.gif" alt="RDCLAW agent self-healing: diagnoses a missing dependency and a PEP 668 restriction, builds a venv, installs, retries" width="860">
+</div>
+
+*Above: mid-task, the agent hits a real failure — `ModuleNotFoundError` plus an unexpected PEP 668 externally-managed Python — diagnoses both, creates a virtualenv, installs the dependency, and retries to success. Unprompted, narrating each step.*
+
+**Full clips** (click to play):
+
+| Clip | What it proves |
+| --- | --- |
+| [① Autonomous end-to-end run · 56s](media/demo-1-autonomous-end-to-end.mp4) | One goal in: research the web → write a sourced report → save to disk → verify its own work. Finishes with "zero human intervention, zero failures." |
+| [② Research → deliverable · 85s](media/demo-2-research-to-file.mp4) | Parallel web searches and page fetches, source-linked summary, file written to disk and read back to confirm correctness. |
+| [③ Code, execute, report · 63s](media/demo-3-code-and-execute.mp4) | Inspects the local Python environment, writes a script, executes it, returns verified output. |
+| [④ Self-healing ★ · 42s](media/demo-4-self-healing.mp4) | Hits a missing dependency **and** a PEP 668 environment restriction; diagnoses, builds a venv, installs, retries until success — narrating every step. |
 
 ## What it is
 
