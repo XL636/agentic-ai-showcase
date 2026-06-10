@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RDCLAW — Agentic AI Demos</title>
+<meta name="description" content="Unedited screen recordings of RDCLAW, an enterprise agentic AI desktop platform: autonomous end-to-end runs, tool use, self-verification, and self-healing.">
+<style>
+  :root { --ink:#16181d; --muted:#5b6472; --accent:#c0392b; --bg:#fbfaf8; --card:#fff; --rule:#e8e3dc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,"Helvetica Neue","PingFang SC",Arial,sans-serif; }
+  .wrap { max-width:880px; margin:0 auto; padding:48px 20px 90px; }
+  .kicker { font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+  h1 { font-size:34px; line-height:1.2; margin:10px 0 8px; letter-spacing:-.01em; }
+  .sub { color:var(--muted); font-size:17px; max-width:64ch; margin:0 0 8px; }
+  .links { margin-bottom:40px; font-size:15px; }
+  a { color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(192,57,43,.35); }
+  a:hover { border-bottom-color:var(--accent); }
+  section { margin:0 0 44px; }
+  h2 { font-size:20px; margin:0 0 4px; }
+  .proves { color:var(--muted); font-size:15px; margin:0 0 14px; }
+  video { width:100%; border-radius:14px; border:1px solid var(--rule); background:#000; display:block; }
+  .star { color:var(--accent); }
+  .footer { margin-top:24px; padding-top:18px; border-top:1px solid var(--rule); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="kicker">Agentic AI · Live Demos</div>
+  <h1>RDCLAW (睿动Claw) — a real autonomous agent</h1>
+  <p class="sub">Unedited screen recordings. Given a goal in plain English, the agent plans, calls tools (web search, shell, files), observes results, verifies its own work, and fixes its own failures mid-task — no human help.</p>
+  <p class="links"><a href="https://github.com/XL636/agentic-ai-showcase">GitHub repo</a> &nbsp;·&nbsp; <a href="https://iruidong.com/rdclaw/">Product site &amp; user manual</a></p>
+
+  <section id="demo-4">
+    <h2><span class="star">★</span> Self-healing — diagnose, fix, retry &nbsp;<span class="proves">· 42s</span></h2>
+    <p class="proves">The agent hits a missing dependency <em>and</em> an unexpected PEP 668 externally-managed Python restriction; it diagnoses both, creates a virtualenv, installs the dependency, and retries until success — narrating every step.</p>
+    <video controls preload="metadata" src="media/demo-4-self-healing.mp4"></video>
+  </section>
+
+  <section id="demo-1">
+    <h2>Autonomous end-to-end run &nbsp;<span class="proves">· 56s</span></h2>
+    <p class="proves">One goal in: research the web → write a sourced report → save to disk → verify its own work. Finishes with “zero human intervention, zero failures.”</p>
+    <video controls preload="metadata" src="media/demo-1-autonomous-end-to-end.mp4"></video>
+  </section>
+
+  <section id="demo-2">
+    <h2>Research → deliverable &nbsp;<span class="proves">· 85s</span></h2>
+    <p class="proves">Parallel web searches and page fetches, a source-linked summary written to disk, then read back to confirm correctness.</p>
+    <video controls preload="metadata" src="media/demo-2-research-to-file.mp4"></video>
+  </section>
+
+  <section id="demo-3">
+    <h2>Code, execute, report &nbsp;<span class="proves">· 63s</span></h2>
+    <p class="proves">Inspects the local Python environment, writes a script, executes it, and returns verified output.</p>
+    <video controls preload="metadata" src="media/demo-3-code-and-execute.mp4"></video>
+  </section>
+
+  <div class="footer">© 2025–2026 睿动AI (RDCLAW Team) · <a href="https://iruidong.com/rdclaw/">iruidong.com/rdclaw</a></div>
+</main>
+</body>
+</html>

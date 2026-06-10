@@ -20,14 +20,16 @@ These are unedited screen recordings of RDCLAW given a goal in plain English. Wh
 
 *Above: mid-task, the agent hits a real failure — `ModuleNotFoundError` plus an unexpected PEP 668 externally-managed Python — diagnoses both, creates a virtualenv, installs the dependency, and retries to success. Unprompted, narrating each step.*
 
-**Full clips** (click to play):
+### ▶ [Watch all demos in your browser](https://xl636.github.io/agentic-ai-showcase/)
 
 | Clip | What it proves |
 | --- | --- |
-| [① Autonomous end-to-end run · 56s](media/demo-1-autonomous-end-to-end.mp4) | One goal in: research the web → write a sourced report → save to disk → verify its own work. Finishes with "zero human intervention, zero failures." |
-| [② Research → deliverable · 85s](media/demo-2-research-to-file.mp4) | Parallel web searches and page fetches, source-linked summary, file written to disk and read back to confirm correctness. |
-| [③ Code, execute, report · 63s](media/demo-3-code-and-execute.mp4) | Inspects the local Python environment, writes a script, executes it, returns verified output. |
-| [④ Self-healing ★ · 42s](media/demo-4-self-healing.mp4) | Hits a missing dependency **and** a PEP 668 environment restriction; diagnoses, builds a venv, installs, retries until success — narrating every step. |
+| [① Autonomous end-to-end run · 56s](https://xl636.github.io/agentic-ai-showcase/#demo-1) | One goal in: research the web → write a sourced report → save to disk → verify its own work. Finishes with "zero human intervention, zero failures." |
+| [② Research → deliverable · 85s](https://xl636.github.io/agentic-ai-showcase/#demo-2) | Parallel web searches and page fetches, source-linked summary, file written to disk and read back to confirm correctness. |
+| [③ Code, execute, report · 63s](https://xl636.github.io/agentic-ai-showcase/#demo-3) | Inspects the local Python environment, writes a script, executes it, returns verified output. |
+| [④ Self-healing ★ · 42s](https://xl636.github.io/agentic-ai-showcase/#demo-4) | Hits a missing dependency **and** a PEP 668 environment restriction; diagnoses, builds a venv, installs, retries until success — narrating every step. |
+
+<sub>Raw files: [①](media/demo-1-autonomous-end-to-end.mp4) · [②](media/demo-2-research-to-file.mp4) · [③](media/demo-3-code-and-execute.mp4) · [④](media/demo-4-self-healing.mp4)</sub>
 
 ## What it is
 
